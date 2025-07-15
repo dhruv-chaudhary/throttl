@@ -47,6 +47,14 @@ const server = Bun.serve({
         return Response.json({ allowed: false });
       },
     },
+    "/api/status": {
+      GET: async (req) => {
+        return Response.json({
+          status: "ok",
+          bucketCount: buckets.size,
+        });
+      },
+    },
   },
   error(error) {
     console.error(error);
