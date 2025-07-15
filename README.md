@@ -122,3 +122,4 @@ This project was created using Bun (v1.1.28). [Bun](https://bun.sh) is a fast al
 ## Roadmap
 
 [ ] Setup Github actions for releasing platform specific binaries
+[ ] Dockerize
