@@ -23,7 +23,7 @@ const server = Bun.serve({
       POST: async (req) => {
         const body = await req.json();
         const { domain, cap = CAP, periodMs = PERIOD } = body;
-        buckets.set(domain, { tokens: cap, cap, periodMs, last: Date.now() });
+        buckets.set(domain, { tokens: 0, cap, periodMs, last: Date.now() });
         return Response.json({ ok: true });
       },
     },
