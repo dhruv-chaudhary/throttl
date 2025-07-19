@@ -2,6 +2,12 @@
 
 A high-performance rate limiting service built with Bun. Throttl implements a token bucket algorithm to control request rates per domain.
 
+### Deep Dive (Blog Post)
+
+Want to know why I built this, how it works under the hood, and how it performed in benchmarks?
+
+👉 Read the full write-up here: [**buildbreakrepeat.dev/posts/rate-limiter-for-web-scraping**](https://buildbreakrepeat.dev/posts/rate-limiter-for-web-scraping/)
+
 ## Features
 
 - **Token Bucket Rate Limiting**: Implements a configurable token bucket algorithm
